@@ -1,0 +1,20 @@
+{
+  "name": "two",
+  "version": "1.0.0",
+  "description": "To write the automation tests using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nuthan Maddineni",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.3"
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
