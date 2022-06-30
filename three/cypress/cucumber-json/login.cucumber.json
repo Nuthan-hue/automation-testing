@@ -1,0 +1,202 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "open amazon and login",
+    "line": 1,
+    "id": "open-amazon-and-login",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "open-amazon-and-login;sucess-login-of-amazon-two-times",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "sucess login of amazon two times",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "open amazon url",
+            "result": {
+              "status": "passed",
+              "duration": 6901000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "click on signin",
+            "result": {
+              "status": "passed",
+              "duration": 11466000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Give mail or mobile number '9381518678'",
+            "result": {
+              "status": "passed",
+              "duration": 4980000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "click on continue",
+            "result": {
+              "status": "passed",
+              "duration": 2136000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "give wrong credentials",
+            "result": {
+              "status": "passed",
+              "duration": 537000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "click signinfull",
+            "result": {
+              "status": "passed",
+              "duration": 818000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "check whether problem page loaded",
+            "result": {
+              "status": "passed",
+              "duration": 1627000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "give credentials",
+            "result": {
+              "status": "passed",
+              "duration": 916000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "click on signinfull",
+            "result": {
+              "status": "passed",
+              "duration": 468000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Validate username",
+            "result": {
+              "status": "passed",
+              "duration": 9359000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "go to search",
+            "result": {
+              "status": "passed",
+              "duration": 29284000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "validate url",
+            "result": {
+              "status": "passed",
+              "duration": 263000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "validate first item name",
+            "result": {
+              "status": "passed",
+              "duration": 457000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "validate second item name",
+            "result": {
+              "status": "passed",
+              "duration": 254000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "validate third item name",
+            "result": {
+              "status": "passed",
+              "duration": 17979000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Check items quantity",
+            "result": {
+              "status": "passed",
+              "duration": 397000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "logout amazon",
+            "result": {
+              "status": "passed",
+              "duration": 3538000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "go to signout",
+            "result": {
+              "status": "passed",
+              "duration": 8646000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

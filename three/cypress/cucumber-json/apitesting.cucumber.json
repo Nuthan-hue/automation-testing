@@ -1,0 +1,69 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Testing API JSON-server",
+    "line": 1,
+    "id": "testing-api-json-server",
+    "tags": [],
+    "uri": "apitesting.feature",
+    "elements": [
+      {
+        "id": "testing-api-json-server;use-api-methods(get,put,delete,post)-for-testing",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "use API methods(GET,PUT,DELETE,POST) for testing",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 3,
+            "name": "use GET method",
+            "result": {
+              "status": "failed",
+              "duration": 12976000000,
+              "error_message": "CypressError: `cy.request()` failed trying to load:\n\nhttp://localhost:3000/posts/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: http://localhost:3000/posts/\n\n-----------------------------------------------------------\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at https://www.amazon.in/__cypress/runner/cypress_runner.js:160688:78\nFrom previous event:\n    at Context.request (https://www.amazon.in/__cypress/runner/cypress_runner.js:160685:15)\nFrom Your Spec Code:\n    at Context.eval (https://www.amazon.in/__cypress/tests?p=cypress\\integration\\apitesting.feature:40:6)\n    at Context.resolveAndRunStepDefinition (https://www.amazon.in/__cypress/tests?p=cypress\\integration\\apitesting.feature:10493:29)\n    at Context.eval (https://www.amazon.in/__cypress/tests?p=cypress\\integration\\apitesting.feature:9814:35)\n\nFrom Node.js Internals:\n  RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000\n      at new RequestError (C:\\Users\\sai\\AppData\\Local\\Cypress\\Cache\\9.5.3\\Cypress\\resources\\app\\node_modules\\request-promise-core\\lib\\errors.js:14:15)\n      at Request.plumbing.callback (C:\\Users\\sai\\AppData\\Local\\Cypress\\Cache\\9.5.3\\Cypress\\resources\\app\\node_modules\\request-promise-core\\lib\\plumbing.js:87:29)\n      at Request.RP$callback [as _callback] (C:\\Users\\sai\\AppData\\Local\\Cypress\\Cache\\9.5.3\\Cypress\\resources\\app\\node_modules\\request-promise-core\\lib\\plumbing.js:46:31)\n      at self.callback (C:\\Users\\sai\\AppData\\Local\\Cypress\\Cache\\9.5.3\\Cypress\\resources\\app\\node_modules\\@cypress\\request\\request.js:183:22)\n      at Request.emit (node:events:394:28)\n      at Request.onRequestError (C:\\Users\\sai\\AppData\\Local\\Cypress\\Cache\\9.5.3\\Cypress\\resources\\app\\node_modules\\@cypress\\request\\request.js:869:8)\n      at ClientRequest.emit (node:events:406:35)\n      at Socket.socketErrorListener (node:_http_client:447:9)\n      at Socket.emit (node:events:394:28)\n      at emitErrorNT (node:internal/streams/destroy:157:8)\n      at emitErrorCloseNT (node:internal/streams/destroy:122:3)\n      at processTicksAndRejections (node:internal/process/task_queues:83:21)\n  "
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "use POST method",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "edit using PUT method",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Delete a row uing DELETE method",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "use any wrong url",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
