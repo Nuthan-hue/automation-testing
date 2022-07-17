@@ -2,7 +2,7 @@
 import { When, Then ,And} from "cypress-cucumber-preprocessor/steps";
 
 When("use GET method", () => { 
-    cy.request("http://localhost:3000/posts/").then((response) => {
+    cy.request("http://localhost:8000/posts/").then((response) => {
     expect(response.status).to.eq(200);
     expect(response.body).not.to.be.empty;
     expect(response.body.length).to.greaterThan(1)
@@ -13,7 +13,7 @@ When("use GET method", () => {
 Then("use POST method", () => {
     cy.request({
         method:'POST',
-        url:'http://localhost:3000/posts',
+        url:'http://localhost:8000/posts',
         body:{
             "id":15,"title": "json-server7","author": "typicode6"},
         failOnStatusCode: false
@@ -29,7 +29,7 @@ Then("use POST method", () => {
 And("edit using PUT method", () => {
     cy.request({
         method:'PUT',
-        url:'http://localhost:3000/posts/1',
+        url:'http://localhost:8000/posts/1',
         body:{
             "id":1,
             "title": "json-server7",
@@ -44,7 +44,7 @@ And("edit using PUT method", () => {
 And("Delete a row uing DELETE method", () => {
     cy.request({
         method:"DELETE",
-        url:"http://localhost:3000/posts/15",
+        url:"http://localhost:8000/posts/15",
         failOnStatusCode: false
     }).then((a)=>{
         expect(a.status).to.eq(200)
@@ -53,7 +53,7 @@ And("Delete a row uing DELETE method", () => {
 Then("use any wrong url", () => {
     cy.request({
         method:"DELETE",
-        url:"http://localhost:3000/posts/",
+        url:"http://localhost:8000/posts/",
         failOnStatusCode: false
     }).then((a)=>{
         expect(a.status).to.eq(404)

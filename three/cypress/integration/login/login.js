@@ -1,63 +1,36 @@
-import password from "C:\\Users\\sai\\Desktop\\cypress files\\three\\cypress\\integration\\password.json"
 import logmain from '../loginwithpom/logmain'
 import {Then,When,And,Given} from "cypress-cucumber-preprocessor/steps"
-const h=new logmain()
+import password from '/Users/shiyad/Documents/autotesting/automation-testing/three/cypress/integration/password.json'
+import p from '/Users/shiyad/Desktop/untitled folder/nuthan/pwd.json'
+const obj=new logmain()
+// const fs=require("fs");
+// const a='/Users/shiyad/Documents/autotesting/automation-testing/three/cypress/integration/password.json'
+// const data=fs.readFile(a)
+// console.log(data)
+// cy.log(data)
+// password["password1"]="asdfgh"
 Given("open amazon url",()=>{
-    //h.navigatetourl()
-    cy.visit("/")
+    obj.navigatetourl()
+
 })
 And("click on signin",()=>{
-    cy.get('#nav-link-accountList-nav-line-1').click()
+   // cy.get('#nav-link-accountList-nav-line-1').click()
+   obj.clickonsignin()
 })
-//And("Give wrong username",()=>{
-  //  cy.get('#ap_email').type(9381)
-    //h.continue()
-    //cy.get('.a-list-item').then(($link)=>{
-     //   const text=$link.text();
-       // expect(text).to.match(/We cannot find an account with that mobile number*/)
-   // })
-//})
+
 Then("Give mail or mobile number {string}",(username)=>{
-    cy.get('#ap_email').type(username)
+    obj.enterphone().type(username)
 })
 And("click on continue",()=>{
-    //cy.get('.a-button-input').click()//Used class as identifier
-    h.continue()
-})
-And("give wrong credentials",()=>{
-    cy.get('#ap_password').type('qdfg')
-})
-Then("click signinfull",()=>{
-    h.cl()
-})
-And("check whether problem page loaded",()=>{
-    cy.get('.a-list-item').then(($link)=>{
-        const text=$link.text();
-        expect(text).to.match(/Your password is incorrect*/)
-    })
-    cy.log("Password is wrong,Pls give rt password")
+    obj.continue()
 })
 And("give credentials",()=>{
-    h.givec()
+    // cy.fixture('pas').then(function(data){
+    //     h.givepassword().type(data.password1);
+    //   })
+    obj.givepassword().type(p['password']);
 })
 Then("click on signinfull",()=>{
-    h.cl()
+    obj.cl()
+    cy.wait(1000)
 })
-
-And("Validate username",()=>{
-    cy.get("#nav-link-accountList-nav-line-1").then(function($welcomems){
-        const welocome=$welcomems.text()
-        cy.log(welocome)
-        expect(welocome).to.match(/Hello.*/)
-        //cy.contains(/Hello.*/).click()
-    })
-})
-
-
-
-// cy.get('[data-testid="#nav-link-accountList-nav-line-1"]').should('include.text','Nuthan')
-//cy.get("#nav-link-accountList-nav-line-1").should('include.text','Nuthan')
-
-//  const welocome=$welcomems.text()
-//  cy.log(welocome)
-//  expect(welocome).eq('Hello, Nuthan')
