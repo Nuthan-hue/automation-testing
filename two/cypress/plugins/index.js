@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
+// above is for auto suggestions 
 // ***********************************************************
-const cucumber = require('cypress-cucumber-preprocessor').default 
-
 // This example plugins/index.js can be used to load plugins
 //
 // You can change the location of this file or turn off loading
@@ -20,10 +19,11 @@ const cucumber = require('cypress-cucumber-preprocessor').default
 // eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
-  on('file:preprocessor', cucumber())
   // `config` is the resolved Cypress config
 }
+
+const cucumber = require('cypress-cucumber-preprocessor').default
+
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+  on('file:preprocessor', cucumber())
 }

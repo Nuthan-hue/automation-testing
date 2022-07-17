@@ -1,0 +1,182 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "open amazon, login, search for item, then validate them and finally logout",
+    "line": 1,
+    "id": "open-amazon,-login,-search-for-item,-then-validate-them-and-finally-logout",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "open-amazon,-login,-search-for-item,-then-validate-them-and-finally-logout;sucess-login-of-amazon-two-times",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "sucess login of amazon two times",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "open amazon url",
+            "result": {
+              "status": "passed",
+              "duration": 7150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "click on signin",
+            "result": {
+              "status": "passed",
+              "duration": 2974000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Give mail or mobile number '9381518678'",
+            "result": {
+              "status": "passed",
+              "duration": 592000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "click on continue",
+            "result": {
+              "status": "passed",
+              "duration": 1451000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "give credentials",
+            "result": {
+              "status": "passed",
+              "duration": 510000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "click on signinfull",
+            "result": {
+              "status": "passed",
+              "duration": 4480000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Validate username",
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "go to search",
+            "result": {
+              "status": "passed",
+              "duration": 8873000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "validate url",
+            "result": {
+              "status": "passed",
+              "duration": 101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "validate first item name",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "validate second item name",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "validate third item name and items in cart",
+            "result": {
+              "status": "passed",
+              "duration": 6988000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Compare items quantity",
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "open-amazon,-login,-search-for-item,-then-validate-them-and-finally-logout;signout",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "signout",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "logout amazon",
+            "result": {
+              "status": "passed",
+              "duration": 2047000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "click on signout",
+            "result": {
+              "status": "passed",
+              "duration": 2588000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
